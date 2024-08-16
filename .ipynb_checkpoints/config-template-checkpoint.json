@@ -1,0 +1,10 @@
+{
+    "subscription_id": "your-subscription-id",
+    "resource_group": "resource-group-name",
+    "workspace_name": "workspace-name",
+    "region": "region",
+    "model_name": "model_name",
+    "service_name": "service_name",
+    "weights_path": "path_to_saved_model_dict",
+    "image_dir": "image_directory"
+}
