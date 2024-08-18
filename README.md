@@ -1,6 +1,6 @@
 The codebase for this deployment has 3 main sections. The first is `Deploy ML model on Azure`, which uploads the model to Azure and runs it. The second is `score.py`, which defines how the model will behave when it is deployed. The third is `Predict from Azure Endpoint`, which takes an image from the users computer and sends it to the Azure model. This readme will break down all the relevant info about each section of the code.
 
-There is also a YouTube video explaining the code that this branch was forked from. It is not exactly the same, but it can give you a better idea of what is going on if that is helpful. [Here is the link](Check this video for step-by-step explanation: [https://youtu.be/VfTVIXiffBU](https://youtu.be/VfTVIXiffBU))
+There is also a [YouTube video](https://youtu.be/VfTVIXiffBU) explaining the code that this branch was forked from. It is not exactly the same, but it can give you a better idea of what is going on if that is helpful.
 
 # How to Run:
 1. Go to Azure portal and sign up if you haven't. Create a `resource group` and a `workspace`.
@@ -19,6 +19,7 @@ There is also a YouTube video explaining the code that this branch was forked fr
 }
 ```
 Replace all of the parameters with your info except `scoring_uri`. Rename the file to `config.json`.
+
 3. Open `Deploy model on Azure.ipynb` and run all the cells until you get to **Cleaning up all the created resources**. Then stop.
 4. Run `predict.py`. You should get numbers back as your predictions.
 5. Go back to `Deploy model on Azure.ipynb`. run the rest of the cells below **Cleaning up all the created resources**.
